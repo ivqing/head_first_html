@@ -13,6 +13,16 @@ body {
 	font-family: sans-serif;
 	font-size: medium;
 }
+#xiaofang {
+	width: 600px;
+	height: 400px;
+	float: right;
+}
+#fixedcute {
+	position: fixed;
+	top: 300px;
+	left: -5px;
+}
 h1, h2 {
 	font-family: sans-serif;
 	color: yellow;
@@ -24,10 +34,10 @@ h1 {
 h2 {
 	text-decoration: underline; /* the underline will only be under the text. */
 }
-#coffee {
+#coffee > p {
 	background-color: silver;
-	font-color: blue; 
-	margin: 2px dashed blue;
+	font-color: blue; /* didn't work */
+	margin: 2px dashed blue; /* didn't work. */
 }
 .box {
 	color: green;
@@ -39,9 +49,15 @@ h2 {
 	padding: 25px;
 	margin: 30px;
 	margin-right: 250px;
-
+}
 blockquote {
 	font-style: italic;
+}
+#footer { /* didn't work */
+	font-size: 150%;
+	text-align: right;
+	line-height: normal;
+	margin-top: 3px;
 }
 </style>
 </head>
@@ -49,6 +65,7 @@ blockquote {
 <body>
 
 <h1>Starbuzz Coffee Beverages</h1>
+<p><img id="xiaofang" src='img.jpg' alt="this is a picture" /></p>
 <div id="coffee">
 <h2>House Blend, $1.49</h2>
 <p>A smooth, mild blend of coffees from Mexico, Bolivia and Guatemala.</p>
@@ -63,6 +80,11 @@ blockquote {
 <p>A spicy drink made with black tea, spices, milk and honey.</p>
 
 </div>
+
+<div id="fixedcute">
+	<img src='eg_cute.gif' />
+</div>
+
 <p><a href="mission.html">Read about our Mission</a>
 <br>
 Read the <a href="" 
@@ -78,5 +100,12 @@ Read the <a href=""
 啊睡觉；打发是老大风简欧为辅我请他要求NLAGFJASFWega打卡
 发生；发货沃尔夫发顺丰我iohg附件按都是；偶全文OUROJAO； FEWAOGYDFHKNVKAEJFOW接啊； 艾尔；哦就爱爱了</p>
 
+<div id="footer">
+	<p>
+	&copy; 2015, ivqing<br />
+	All trademarks and registered trademarks
+	appearing on this site are free.
+	</p>
+</div>
 </body>
 </html>
