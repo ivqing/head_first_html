@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content=""text"/html; charset=utf-8"</meta>
+<title>form</title>
+<style type="text/css">
+#outer {
+	margin: 30px;
+	border: 1px dashed green;
+	background-color: silver;
+}
+</style>
+</head>
+<body>
+<h1>The Starbuzz Bean Machine</h1>
+<p>Fill out the form below and click "order now" to order.</p>
+<div id="outer">
+	<form action="" method="post">
+		<p>Choose your beans:
+
+		<select name="beans">
+			<option value="House Blend">
+			<option value="Bolivia">Boliva</option>
+			<option value="Guatemala">Guatemala</option>
+			<option value="Kenya">Kenya</option>
+		</select>
+		</p>
+
+		<p>Type:<br />
+		<input type="radio" name="beantype" value="whole"/>Whole bean
+		<input type=radio name=beantype value=ground /> Ground
+		</p>
+
+		<p>Extras:<br />
+		<input type="checkbox" name="extras[]" value="giftwrap"/>Gift wrap
+		<input type="checkbox" name="extras[]" value="catalog" checked="checked" />Include
+		</p>
+
+		<p>Ship to:<br />
+		Name:<input type="text" name=Name />
+		<br />
+		Address:<input type="text" name=Address />
+		<br />
+		City:<input type="text" name=City />
+		<br />
+		State:<input type="text" name=State />
+		<br />
+		Zip:<input type="text" name=Zip />
+		</p>
+
+		<p>
+		Customer Comments:
+		<br />
+		<textarea name="comments" rows="10" cols="48"></textarea>
+		<br />
+		<input type="submit" value="Order Now!" />
+		</p>
+	</form>
+</div>
+</body>
+</html>
+
+	
